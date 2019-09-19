@@ -64,14 +64,14 @@
 
     <!-- Mars Hemispheres -->
     <h2 style="padding-top: 10px; margin-top: 25px; text-align: center;">Mars Hemispheres</h2>
-    <div class="card-deck>
+    <div class="card-deck">
       <div class="col-md-12">
         <div class="row" id="mars-hemispheres">
           {% for hemisphere in mars.hemispheres %}
-             <div class="col-md-6">
+             <div class="col-md-12">
                 <div class="card text-white bg-danger" style="padding: 10px; margin: 30px;">
                     <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
-                    <img class="card-img-top" src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="..."/>
+                    <img class="card-img-top" src="{{hemisphere.img_url | default('static/images/error.png', true)}}" class="img-responsive"/>
                     <div class="card-body">
                         <p class="card-text">{{hemisphere.title}}</p>
                     </div>

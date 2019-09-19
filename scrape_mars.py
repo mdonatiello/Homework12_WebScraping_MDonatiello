@@ -16,10 +16,10 @@ def init_browser():
 # Set Executable Path & Initialize Chrome Browser
     executable_path = {'executable_path': '/Users/17324/Downloads/chromedriver'}
     _browser = Browser('chrome', **executable_path, headless=False)
-
+    return _browser
 _browser = init_browser()
 mars = {}
-
+    
 ###################################################
 # NASA Mars News
 ###################################################
